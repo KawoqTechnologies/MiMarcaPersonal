@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mi Marca Personal</title>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-attachment: fixed;
+    }
+
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .viewC {
+        height: 1000px;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .viewC {
+        height: 650px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #33b5e5!important;
+              }
+          }
+  </style>
+</head>
+
+<body>
+
+  <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+      <a href="#navHome" class="btn-floating btn-large info-color-dark">
+          <i class="fa fa-arrow-up"></i>
+      </a>
+  </div>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <a class="navbar-brand" href="/">
+        <strong>Mi Marca Personal</strong>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto smooth-scroll">
+          <li class="nav-item">
+            <a class="nav-link" href="#navHome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navPresentadoPor">Presentado Por</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navSeminarioTaller">Seminario Taller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navObjetivos">Objetivos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#navEstrategias">Estrategias</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#navEvento">Evento</a>
+		  </li>
+        </ul>
+
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/fernandodeleone" class="nav-link">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://gt.linkedin.com/in/fernandodeleonestrada" class="nav-link">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="navHome" class="view full-page-intro" style="background-image: url('img/bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <div class="text-center white-text mx-5 wow fadeIn">
+        <h1 class="mb-4">
+          <strong>Mi Marca Personal</strong>
+        </h1>
+        <p>
+          <strong>Seminario Taller</strong>
+        </p>
+        <p><strong>Hotel Camino Real 23/10/2018 18:00</strong></p>
+        <p>
+          En este seminario taller te mostraremos la secuencia para que mejores tu imagen y muestres tu trabajo online lo cual es la base, para colocarte cómo un referente de tu profesión.
+        </p>
+      </div>
+
+    </div>
+
+  </div >
+  <div id="navPresentadoPor"></div>
+  <main>
+    <div class="container">
+
+      <section class="text-center  wow fadeIn">
+
+        <h2 class="h1-responsive font-weight-bold my-5">Presentado por</h2>
+        <div class="row d-flex justify-content-center">
+      
+          <div class="col">
+            <div class="card testimonial-card">
+              <div class="card-up info-color-dark"></div>
+              <div class="avatar mx-auto white">
+                <img src="img/avatar.jpg" class="rounded-circle img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="font-weight-bold mb-4">Fernando de León Estrada</h4>
+                <hr>
+                <p class="dark-grey-text mt-4">Posee más de 20 años de experiencia en el área comercial. 
+                  Actualmente es Director ejecutivo de Alta Estrategia, a través de la cual ha desarrollado Sistemas Efectivos Comerciales, 
+                  así como provisto a profesionales y empresarios regionales recursos estratégicos para alcanzar sus objetivos en el área comercial. 
+                  Es coach comercial, experto en Social Selling y en Email Marketing Strategist. Ha desarrollado programas en Marketing Turístico, 
+                  Social Selling, Marca personal, E-commerce y email marketing. Partner de Benchmark email desde Enero del año 2016.</p>
+                <p class="dark-grey-text mt-4"><a href="http://altaestrategia.com" class="btn btn-info"> Visitar Alta Estrategia</a></p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        
+      </section>
+
+      <hr id="navSeminarioTaller" class="my-5">
+
+      <section class="mt-5 wow fadeIn">
+
+        <div class="row">
+
+          <div class="col-md-6 mb-4">
+
+            <img src="img/bg.jpg" class="img-fluid z-depth-1-half" alt="">
+
+          </div>
+
+          <div class="col-md-6 mb-4">
+
+            <h3 class="h3 mb-3">Seminario Taller</h3>
+            <p>Las 7 acciones básicas para desarrollar
+              <strong>Tu marca personal</strong></p>
+
+            <hr>
+
+            <p>
+                Internet ha creado un cambio tan radical en nuestra manera de comunicarnos y
+                hacer negocios, nuestra marca personal puede preceder la comunicación con
+                nuestros futuros empleadores o permitirnos independizarnos.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr id="navObjetivos" class="my-5">
+
+      <section>
+
+        <h3 class="h3 text-center mb-5">Objetivos</h3>
+
+        <div class="row wow fadeIn">
+
+          <div class="col-lg-6 col-md-12 px-4">
+
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-user fa-2x light-blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">General</h5>
+                <p class="grey-text">Conocer cuáles son los pasos básicos para iniciar una estrategia de marca personal.</p>
+              </div>
+            </div>
+
+            <div style="height:30px"></div>
+
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-industry fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Estructura</h5>
+                <p class="grey-text">Saber estructurar un modelo de negocio en torno al comercio electrónico.
+                </p>
+              </div>
+            </div>
+
+            <div style="height:30px"></div>
+
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fa fa-key fa-2x cyan-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Estrategias</h5>
+                <p class="grey-text">Cada participante se llevará consigo 7 acciones para iniciar su estrategia de marketing online.</p>
+              </div>
+            </div>
+			
+			<div class="row">
+				<div class="col-1 mr-3">
+				<i class="fa fa-group fa-2x cyan-text"></i>
+				</div>
+				<div class="col-10">
+					<h5 class="feature-title">Marketing</h5>
+					<p class="grey-text">Integrar la visión Marca Personal para desarrollar una estrategia de Marketing Digital.</p>
+				</div>
+			</div>
+
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+
+            <p class="h5 text-center mb-4">Marca Personal</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VJ84R8Lyoh4" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr id="navEstrategias" class="my-5">
+
+      <section>
+
+        <h2 class="my-5 h3 text-center">Las 7 estrategias para desarrollar tu marca personal</h2>
+
+        <div class="row features-small mt-5 wow fadeIn">
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-th fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2 pl-3">
+                <h5 class="feature-title font-bold mb-1">Tu registro en internet (La propiedad más valiosa)</h5>
+                <p class="grey-text mt-2">Aquí la respuesta a cómo es que puedes hacer que los demás te identifiquen
+						entre los miles de empresas que hacen lo mismo que tú.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-level-up fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Estas seguro que sabes contra quien compites</h5>
+                <p class="grey-text mt-2">Hacer una investigación de tu competencia en forma periódica aquí las bases
+						para lograrlo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-comments-o fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Deja claro con quien hacen negocios</h5>
+                <p class="grey-text mt-2">Te tienes que identificar es cuestión de aquí y ahora.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-user fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Conoce donde están tus clientes</h5>
+                <p class="grey-text mt-2">Localízalos y trata con ellos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row features-small mt-4 wow fadeIn">
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-cubes fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Crea tu espacio en internet</h5>
+                <p class="grey-text mt-2">Cómo puedes lograr colocarte en ese lugar para que te encuentren.
+				</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-database fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Bases de datos, tu futuro en el negocio</h5>
+                <p class="grey-text mt-2">Te daremos la herramienta para crear una base de datos y después dar
+						seguimiento.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6">
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-twitter fa-2x mb-1 light-blue-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Redes Sociales, solo una herramienta no la base</h5>
+                <p class="grey-text mt-2">Las redes sociales funcionan solo si y solo si son parte de una estrategia solida
+						de comunicación.
+				</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+	  
+	<hr id="navEvento" class="my-5">
+	
+	<section>
+
+			<h2 class="my-5 h3 text-center">Evento</h2>
+	
+			<div class="row wow fadeIn">
+	
+					<div class="col-lg-6 col-md-12 px-4">
+			
+						<div class="row">
+						<div class="col-1 mr-3">
+							<i class="fa fa-map-marker fa-2x light-blue-text"></i>
+						</div>
+						<div class="col-10">
+							<h5 class="feature-title">Locación</h5>
+							<p class="grey-text">Hotel Camino Real. 7a Calle Poniente 33b, Antigua Guatemala 03001</p>
+						</div>
+						</div>
+			
+						<div style="height:1rem"></div>
+			
+						<div class="row">
+						<div class="col-1 mr-3">
+							<i class="fa fa-calendar fa-2x blue-text"></i>
+						</div>
+						<div class="col-10">
+							<h5 class="feature-title">Fecha y Hora</h5>
+							<p class="grey-text">23 de Octube de 2018, 18:00</p>
+						</div>
+						</div>
+
+						<div style="height:1rem"></div>
+
+						<div class="row">
+						<div class="col-1 mr-3">
+							<i class="fa fa-phone fa-2x blue-text"></i>
+						</div>
+						<div class="col-10">
+							<h5 class="feature-title">Telefono</h5>
+							<p class="grey-text">7873 7000</p>
+						</div>
+						</div>
+			
+					</div>
+			
+					<div id="divMap" class="col-lg-6 col-md-12">
+			
+						<div class="card card-cascade narrower">
+
+              <div class="view view-cascade gradient-card-header info-color-dark">
+              <h5 class="mb-0">Mapa</h5>
+              </div>
+          
+              <div class="card-body card-body-cascade">
+          
+              <div id="map" class="z-depth-1" style="height: 18.75rem;"></div>
+              </div>
+          
+          </div>
+					</div>
+			
+					</div>
+	
+			</section>
+
+    </div>
+  </main>
+
+  <footer class="page-footer text-center font-small mt-4 info-color wow fadeIn">
+
+	<hr class="my-4">
+    <div class="pb-4">
+      <a href="https://www.facebook.com/fernandodeleone" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://gt.linkedin.com/in/fernandodeleonestrada" target="_blank">
+        <i class="fa fa-linkedin mr-3"></i>
+      </a>
+    </div>
+
+    <div class="footer-copyright info-color-dark py-3">
+	  © 2018 Copyright
+	</div>
+
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+  integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+  crossorigin=""></script>  
+  <script type="text/javascript">
+    new WOW().init();
+    var mymap = L.map('map').setView([14.553474, -90.735810], 15);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic3dvZG5pdyIsImEiOiJjam4yOTU2Ym4waG5lM3BvOHVwcmY2dnprIn0.cu0SomjtZcBY-pkv-BmzHQ', {
+    maxZoom: 18,
+    minZoom: 10,
+    id: 'mapbox.streets'
+    }).addTo(mymap);
+    var marker = L.marker([14.553474, -90.735810]).addTo(mymap);
+    marker.bindPopup("<b>Hotel Camino Real</b>").openPopup();
+  </script>
+</body>
+
+</html>
